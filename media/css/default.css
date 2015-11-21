@@ -1,0 +1,184 @@
+<link type="text/css" href="../media/css/default.css" rel="stylesheet" />
+ 
+
+	
+ 
+<div id="content"><div class="slideshow">
+  <div id="slideshow0" class="nivoSlider" style="width: 840px; height: 250px;">
+
+                <img src="../media/img/malyshy.png"  alt="" />
+                <img src="../media/img/girls2.png" />
+                <img src="../media/img/girls.png"  />
+                <img src="../media/img/boys8.png" />
+	</div>	
+            </div>
+    </div>
+<script type="text/javascript" src="../media/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="../media/js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slideshow0').nivoSlider({
+        animSpeed: 1800 ,
+        pauseTime: 5000,
+		effect:'random'
+        });
+    });
+    </script>
+
+
+/*
+ * jQuery Nivo Slider v2.5.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+/* The Nivo Slider styles */
+.nivoSlider {
+	position: relative;
+}
+.nivoSlider img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	z-index: 6;
+	display: none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+	display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+/* slider theme */
+.slideshow  {
+	border-top: 1px solid #d2d2ce;
+	border-bottom: 1px solid #d2d2ce;
+	background: #FFFFFF;
+}
+.slideshow .nivoSlider {
+	position: relative;
+	background: #fff url('../image/loading.gif') no-repeat 50% 50%;	
+	padding-bottom: 23px;
+}
+.slideshow .nivoSlider img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.slideshow .nivoSlider a {
+	border: 0;
+	display: block;
+}
+.slideshow .nivo-controlNav {
+	//position: absolute;
+	border-top: 1px solid #d2d2ce;
+	background: #E2E2E2;
+	width: 100%;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	height: 22px;
+	z-index: 9;
+}
+.slideshow .nivo-controlNav a {
+	vertical-align: center;
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url('../image/bullets.png') no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right: 3px;
+	float: right;
+}
+.slideshow .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+.slideshow .nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url('../image/arrows.png') no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+.slideshow a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+.slideshow a.nivo-prevNav {
+	left:15px;
+}
+.slideshow .nivo-caption {
+	text-shadow:none;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.slideshow .nivo-caption a {
+	color:#efe9d1;
+	text-decoration:underline;
+}
