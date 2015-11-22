@@ -34,8 +34,8 @@ class Controller_Index_Catalog extends Controller_Index {
     
     public function action_catminmax(){
           $cat = (int) $this->request->param('cat');
-          $min = (int) $this->request->param('min');
-          $max = (int) $this->request->param('max');
+          $min = (int) $this->request->param('id');
+          $max = (int) $this->request->param('id1');
           
            // Получаем список продукций
         $category = ORM::factory('category')->where('id', '=', $cat)->find();
@@ -69,8 +69,8 @@ class Controller_Index_Catalog extends Controller_Index {
     
       public function action_cat() {
             $cat = (int) $this->request->param('cat');
-            $min = (int) $this->request->param('min');
-          $max = (int) $this->request->param('max');
+            $min = (int) $this->request->param('id');
+          $max = (int) $this->request->param('id1');
         
         // Виджет поиска
        // $search_form = Widget::load('search');
