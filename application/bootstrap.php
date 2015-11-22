@@ -175,18 +175,17 @@ Route::set('admin', 'admin(/<controller>(/<action>(/page<page>)(/<id>)))')
             'action'     => 'index',
 	));
 
+
+
 Route::set('catalog', 'catalog(/<action>(/c<cat>)(/<id>)(/page<page>)(/<id1>))')
 	->defaults(array(
                 'directory'  => 'index',
                 'action' => 'index',
 		'controller' => 'catalog',
 	));
-Route::set('catalog', 'catalog(/<action>(/c<cat>)(/<min>)(/<max>))')
-	->defaults(array(
-                'directory'  => 'index',
-                'action' => 'index',
-		'controller' => 'catalog',
-	));
+
+
+	
 
 Route::set('default', '(<controller>(/<action>(/page<page>)(/<id>)))')
 	->defaults(array(
